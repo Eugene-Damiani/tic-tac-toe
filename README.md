@@ -1,22 +1,5 @@
 Tic-Tac-Toe
 
-Langiages used for this game:
-JavaScript
-html
-CSS
-Bootstrap
-
-Things to add:
-Functioning Restart Button
-Chnage password function to work
-Alert when game ends and who won
-forms must clear after success
-Give feedback to user on successful action
-
-Add-ons:
-Have the Sign-up botton become hidden on sign-in.
-have the win/draw alert be on a sperate page that doesn't interput the first page.
-
 
 USER Story:
 
@@ -31,4 +14,26 @@ Once a game is over, the player will be able to play again
 
 Planning:
 
-I knew the easy part of this project was going to be the CSS and HTML aspect. My major focus was reviewing past lesson on JavaScript and working out what will work and wont work in order to have this compelete. A lot of what had taken up my time was trail and error looking at what will work vs. what doesn't work. 
+My major focus was reviewing past lessons on JavaScript and working out what will work and doing trail with the game logic of what was going to work and not work. Create a schedule and timeline of how long each phase of the project to take. 
+
+Languages used for this game:
+JavaScript
+html
+CSS
+Bootstrap
+
+Things to add:
+Functioning Restart Button
+Chnage password function to work
+Alert when game ends and who won
+forms must clear after success
+Give feedback to user on successful action
+
+Add-ons:
+Have the Sign-up botton become hidden on sign-in.
+Have the win/draw alert be on a sperate page that doesn't interput the first page.
+Have 2-players play remotly 
+Player stats
+An A.I. 
+Have the X's and O's show a shadow before object is placed. 
+Power-Ups
