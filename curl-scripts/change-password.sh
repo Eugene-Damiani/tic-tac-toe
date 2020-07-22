@@ -4,7 +4,7 @@ curl "https://tic-tac-toe-api-production.herokuapp.com/password-change" \
 --header "Authorization: Bearer ${TOKEN}" \
 --header "Content-Type: application/json" \
 --data '{
-  "password":{
+  "passwords":{
   "old": "'"${OLDPW}"'",
   "new": "'"${NEWPW}"'"
   }
