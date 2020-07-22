@@ -30,9 +30,19 @@ const changePasswordFailure = function (){
   $('message').text('Your new passowrd does not match')
 }
 
+const signOutSuccess = function(){
+  $('message').text('You have signed out')
+}
+
+const signOutFailure = function(){
+  $('message').text('You are still signed in')
+}
+
 module.exports = {
   signUpSuccess,
   signInFailure,
   signUpFailure,
-  signInSuccess
+  signInSuccess,
+  signOutSuccess,
+  signOutFailure
 }
