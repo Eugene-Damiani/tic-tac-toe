@@ -1,4 +1,4 @@
-Tic Tac Toe
+Tic-Tac-Toe
 
 Langiages used for this game:
 JavaScript
