@@ -31,4 +31,4 @@ Once a game is over, the player will be able to play again
 
 Planning:
 
-I knew the easy part of this project was going to be the CSS and HTML aspect. My major focus was reviewing past lesson on JavaScript and working out what will work and wont work in order to have this compelete.
+I knew the easy part of this project was going to be the CSS and HTML aspect. My major focus was reviewing past lesson on JavaScript and working out what will work and wont work in order to have this compelete. A lot of what had taken up my time was trail and error looking at what will work vs. what doesn't work. 
