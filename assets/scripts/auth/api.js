@@ -19,29 +19,31 @@ const signIn = function (formData){
   })
 }
 
-const changePassword = function (formData){
+const changePassword = function (formData) {
   console.log(store.user)
   return $.ajax({
-    url: config.apiUrl + '/change-password',
-    header:{
+    // Ask why in order for this to work why it needed to be headers and not header
+    headers: {
       Authorization: 'Bearer ' + store.user.token
     },
+    url: config.apiUrl + '/change-password',
     method: 'PATCH',
     data: formData
   })
 }
 
-const signOut = function (formData){
+// form Data is not needed to log out.
+const signOut = function () {
   return $.ajax({
-    url: congfig.apiUrl + '/sign-out',
+    url: config.apiUrl + '/sign-out',
     method: 'DELETE',
-    header:{
+    header: {
       Authorization: 'Bearer ' + store.user.token
     }
   })
 }
 
-module.exports ={
+module.exports = {
   signUp,
   signOut,
   signIn,
