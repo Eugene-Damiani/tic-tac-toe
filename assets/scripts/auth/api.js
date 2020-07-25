@@ -37,7 +37,7 @@ const signOut = function () {
   return $.ajax({
     url: config.apiUrl + '/sign-out',
     method: 'DELETE',
-    header: {
+    headers: {
       Authorization: 'Bearer ' + store.user.token
     }
   })
