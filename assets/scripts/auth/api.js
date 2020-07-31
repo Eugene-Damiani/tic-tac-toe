@@ -2,7 +2,7 @@
 const config = require('../config')
 const store = require('../store')
 
-const signUp = function (formData){
+const signUp = function (formData) {
   console.log(formData)
   return $.ajax({
     url: config.apiUrl + '/sign-up',
@@ -11,9 +11,9 @@ const signUp = function (formData){
   })
 }
 
-const signIn = function (formData){
+const signIn = function (formData) {
   return $.ajax({
-    url:config.apiUrl + '/sign-in',
+    url: config.apiUrl + '/sign-in',
     method: 'POST',
     data: formData
   })
@@ -35,11 +35,11 @@ const changePassword = function (formData) {
 // form Data is not needed to log out.
 const signOut = function () {
   return $.ajax({
-    url: config.apiUrl + '/sign-out',
-    method: 'DELETE',
     headers: {
       Authorization: 'Bearer ' + store.user.token
-    }
+    },
+    url: config.apiUrl + '/sign-out',
+    method: 'DELETE'
   })
 }
 
