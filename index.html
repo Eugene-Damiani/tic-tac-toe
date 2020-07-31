@@ -33,20 +33,23 @@
 <form id='sign-out'>
         <button type = 'submit'>Sign Out</button>
 </form>
+<!-- I needed to make each box have it's own ID inorder record the click function in each game.-->
           <section class ='container'>
-            <div class = 'row h-100 board'>
-              <div class='col-4 box' data-cell></div>
-              <div class='col-4 box'data-cell></div>
-              <div class='col-4 box'></div>
+            <div class = 'row h-100 board' id = board>
+              <div class='col-4 box'id = 'top-left' data-cell= '0' ></div>
+              <div class='col-4 box'id = 'top-middle' data-cell='1'></div>
+              <div class='col-4 box'id = 'top-right' data-cell='2'></div>
 
-              <div class='col-4 box'></div>
-              <div class='col-4 box'></div>
-              <div class='col-4 box'></div>
+              <div class='col-4 box' id = 'middle-left'  data-cell='3'></div>
+              <div class='col-4 box' id = 'middle-middle' data-cell='4'></div>
+              <div class='col-4 box' id = 'middle-right' data-cell='5'></div>
 
-              <div class='col-4 box'></div>
-              <div class='col-4 box'></div>
-              <div class='col-4 box'></div>
+              <div class='col-4 box' id = 'low-left' data-cell='6'></div>
+              <div class='col-4 box' id = 'low-middle' data-cell='7'></div>
+              <div class='col-4 box' id = 'low-right' data-cell='8'></div>
             </div>
          </section>
+         <button type ='submit' id="restart">Retry</button>
+         <button type = 'submit' id = "start-game">Start Game</button>
   </body>
 </html>
