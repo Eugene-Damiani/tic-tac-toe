@@ -1,21 +1,23 @@
 @import '~bootstrap/scss/bootstrap';
-$text-color:$white;
 
+$text-color: $white;
 
-body{
-  background-color: black;
-  color:$text-color;
+body {
+  background-color: #000000;
+  color: $text-color;
 }
-.container{
+
+.container {
   height: 100vh;
 }
-.board{
-  max-height: calc(100vh - 75px);
-  max-width: calc(100vh - 75px);
+
+.board {
+  max-height: calc(100vh - 200px);
+  max-width: calc(100vh - 100px);
   margin: auto;
 }
 
-.box{
+.box {
   border-right: 10px solid $text-color;
   // min-height: calc(100px/2)
 
@@ -26,14 +28,21 @@ body{
 &:nth-last-child(-1n + 3){
   border-bottom: 0;
   }
-  &:hover{
-    background-color: $white;
+  &:hover {
+    background-color: gold;
     cursor: pointer;
   }
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+// I may not need this code below
+// I spreated this from the other .box I could not get to work other wise.
+// .box::before {
+//   content: '◯';
+//   font-size: 100px;
+// }
 
 
 

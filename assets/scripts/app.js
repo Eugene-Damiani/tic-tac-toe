@@ -19,6 +19,6 @@ $(() => {
   // Game Events
   // $('#restart').on('submit',gameEvents.onRetry)
   $('.box').on('click', gameEvents.onBoxClick)
-  $('#start-game').on('submit', gameEvents.onStartGame)
+  $('#start-game').on('click', gameEvents.onStartGame)
   $('#gameindex').on('click',gameEvents.onGameIndex)
 })
