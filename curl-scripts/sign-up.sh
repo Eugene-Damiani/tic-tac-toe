@@ -10,7 +10,6 @@ curl "https://tic-tac-toe-api-production.herokuapp.com/sign-up" \
     "password_confirmation": "'"${PASSWORD}"'"
   }
 }'
-
 echo
 
 #//why do we have Content-Type
