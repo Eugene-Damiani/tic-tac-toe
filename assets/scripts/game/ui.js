@@ -564,7 +564,5 @@ module.exports = {
   lowMiddleSuccess,
   lowMiddleFailure,
   lowRightSuccess,
-  lowRightFailure,
-  gameIndexSuccess,
-  gameIndexFailure
+  lowRightFailure
 }

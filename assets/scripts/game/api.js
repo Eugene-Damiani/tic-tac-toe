@@ -198,41 +198,14 @@ const gameIndex = function () {
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
-    url: config.apiUrl + '/games/',
+    url: config.apiUrl + '/games./',
     method: 'GET',
     data: {
       games: []
     }
   })
 }
-// const gameIndex = function () {
-//   return $.ajax({
-//     url: config.apiUrl + ' /games/',
-//     method: 'GET',
-//     headers: {
-//       Authorization: 'Bearer ' + store.user.token
-//     }
-//   })
-// }
-// const updateGame = function () {
-//   return $.ajax({
-//     url: config.apiUrl + '/games/' + store.game._id,
-//     method: 'PATCH',
-//     headers: {
-//       id: store.game._id,
-//       Authorization: 'Bearer ' + store.user.token
-//     },
-//     data: {
-//       game: {
-//         cell: {
-//           index: $('#low-right').attr('data-cell'),
-//           value: store.player
-//         },
-//         over: false
-//       }
-//     }
-//   })
-// }
+
 module.exports = {
   startGame,
   topLeft,
