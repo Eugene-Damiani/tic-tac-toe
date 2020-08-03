@@ -43,9 +43,33 @@ const signOut = function () {
   })
 }
 
+<<<<<<< HEAD
+=======
+// const updateGame = function () {
+//   return $.ajax({
+//     url: config.apiUrl + '/games/' + store.game._id,
+//     method: 'PATCH',
+//     headers: {
+//       id: store.game._id,
+//       Authorization: 'Bearer ' + store.user.token
+//     },
+//     data: {
+//       game: {
+//         cell: {
+//           index: $('#board').attr('data-cell'),
+//           value: store.player
+//         },
+//         over: false
+//       }
+//     }
+//   })
+// }
+
+>>>>>>> html
 module.exports = {
   signUp,
   signOut,
   signIn,
-  changePassword
+  changePassword,
+  updateGame
 }

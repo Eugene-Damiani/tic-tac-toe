@@ -16,8 +16,13 @@ $(() => {
   $('#sign-out').on('submit', authEvents.onSignOut)
   // JS for the game
   // Game Events
+<<<<<<< HEAD
   // $('#restart').on('submit',gameEvents.onRetry)
   // $('.box').on('click', gameEvents.onBoxClick)
+=======
+
+  // $('#update-game').on('click', gameEvents.onUpdateGame)
+>>>>>>> html
   $('#start-game').on('click', gameEvents.onStartGame)
   $('#game-index').on('click', gameEvents.onGameIndex)
 

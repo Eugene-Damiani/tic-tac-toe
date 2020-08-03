@@ -564,7 +564,11 @@ module.exports = {
   lowMiddleSuccess,
   lowMiddleFailure,
   lowRightSuccess,
+<<<<<<< HEAD
   lowRightFailure,
   gameIndexSuccess,
   gameIndexFailure
+=======
+  lowRightFailure
+>>>>>>> html
 }

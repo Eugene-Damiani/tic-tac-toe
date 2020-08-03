@@ -198,13 +198,18 @@ const gameIndex = function () {
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
+<<<<<<< HEAD
     url: config.apiUrl + '/games/',
+=======
+    url: config.apiUrl + '/games./',
+>>>>>>> html
     method: 'GET',
     data: {
       games: []
     }
   })
 }
+<<<<<<< HEAD
 // const gameIndex = function () {
 //   return $.ajax({
 //     url: config.apiUrl + ' /games/',
@@ -233,6 +238,9 @@ const gameIndex = function () {
 //     }
 //   })
 // }
+=======
+
+>>>>>>> html
 module.exports = {
   startGame,
   topLeft,

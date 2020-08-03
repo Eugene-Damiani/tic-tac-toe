@@ -60,8 +60,19 @@ const signOutSuccess = function () {
 
 const signOutFailure = function () {
   $('#message').text('You are still signed in')
+<<<<<<< HEAD
 
+=======
+>>>>>>> html
 }
+
+// const updateGameSuccess = function (response) {
+//   $('#content').html('')
+// }
+//
+// const updateGameFailure = function(response) {
+//   $('#message').text('No Sweat Play A Game')
+// }
 
 module.exports = {
   signUpSuccess,
@@ -71,5 +82,11 @@ module.exports = {
   signOutSuccess,
   signOutFailure,
   changePasswordSuccess,
+<<<<<<< HEAD
   changePasswordFailure
+=======
+  changePasswordFailure,
+  updateGameSuccess,
+  updateGameFailure
+>>>>>>> html
 }
