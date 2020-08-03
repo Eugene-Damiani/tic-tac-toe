@@ -19,8 +19,6 @@ body {
 
 .box {
   border-right: 10px solid $text-color;
-  background-image: src('./assets/styles/Lazer1.png');
-
   border-bottom: 10px solid $text-color;
   &:nth-child(3n) {
     border-right: 0;
@@ -52,7 +50,7 @@ font-size: 40px;
 }
 
 body{
-background-image: url(https://images.squarespace-cdn.com/content/v1/5e3c600a64a00b1d67b8f8bb/1581806510596-LAKTK4IKA2PSNX1053FZ/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/0020_greenscreen_retrowave_neon_grids.jpg);
+  background-image: url(https://images.squarespace-cdn.com/content/v1/5e3c600a64a00b1d67b8f8bb/1581806510596-LAKTK4IKA2PSNX1053FZ/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/0020_greenscreen_retrowave_neon_grids.jpg);
   background-position: cover;
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,4 +67,9 @@ button {
 input[type=text], input[type=password], input[type=email] {
   width: 190px;
   background-color: #9D00FF;
+}
+
+img{
+  width: 40%;
+  height: auto;
 }

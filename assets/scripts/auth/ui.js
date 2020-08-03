@@ -64,14 +64,6 @@ const signOutFailure = function () {
   $('#message').text('You are still signed in')
 }
 
-// const updateGameSuccess = function (response) {
-//   $('#content').html('')
-// }
-//
-// const updateGameFailure = function(response) {
-//   $('#message').text('No Sweat Play A Game')
-// }
-
 module.exports = {
   signUpSuccess,
   signInFailure,
