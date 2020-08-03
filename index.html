@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap"
+      rel="stylesheet">
+      <title>X's & O's</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+  <button type = 'submit' id = "start-game">Start Game</button>
+<button type ='submit' id= "game-index">Games Played</button>
+<form id ="change-password">
+  <input type= 'password' name='passwords[old]' placeholder ='Old Password'>
+  <input type= 'password' name='passwords[new]' placeholder = 'New Password'>
+    <button type = 'submit'> Change Password</button>
+</form>
+<form id='sign-out'>
+  <button type = 'submit'>Sign Out</button>
+</form>
+
+      <form id="sign-up">
+        <input type = 'text' name='credentials[email]' placeholder = 'E-mail'>
+        <input type = 'password' name='credentials[password]' placeholder = 'Password'>
+        <input type =  'password' name='credentials[password_confirmation]'placeholder = 'Confirm Password'>
+        <button type = 'submit'>Sign Up!</button>
+      </form>
+      <form id= "sign-in">
+        <input type = 'text' name = 'credentials[email]' placeholder = 'E-mail'>
+        <input type = 'password' name = 'credentials[password]' placeholder = 'Password'>
+        <button type = 'submit'>Login</button>
+      </form>
+        <h1 id='h1'>Flashback of the 80's Tic-Tac-Toe</h1>
+        <p id="message"></p>
+          <section class ='container'>
+            <img src ="public/Lazer1.png" id= 'img' ></img>
+            <div class = 'row h-100 board' id = 'board'>
+              <div class='col-4 box'id = 'top-left' data-cell= '0' ></div>
+              <div class='col-4 box'id = 'top-middle' data-cell='1'></div>
+              <div class='col-4 box'id = 'top-right' data-cell='2'></div>
+
+              <div class='col-4 box' id = 'middle-left'  data-cell='3'></div>
+              <div class='col-4 box' id = 'middle-middle' data-cell='4'></div>
+              <div class='col-4 box' id = 'middle-right' data-cell='5'></div>
+
+              <div class='col-4 box' id = 'low-left' data-cell='6'></div>
+              <div class='col-4 box' id = 'low-middle' data-cell='7'></div>
+              <div class='col-4 box' id = 'low-right' data-cell='8'></div>
+            </div>
+         </section>
+  </body>
+</html>
