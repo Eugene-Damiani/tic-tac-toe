@@ -1,10 +1,10 @@
 @import '~bootstrap/scss/bootstrap';
 
-$text-color: $white;
+$text-color: $black;
 
 body {
-  background-color: #000000;
-  color: $text-color;
+  background-color: black;
+  color: #9D00FF;
 }
 
 .container {
@@ -19,7 +19,7 @@ body {
 
 .box {
   border-right: 10px solid $text-color;
-  // min-height: calc(100px/2)
+  background-image: src('./assets/styles/Lazer1.png');
 
   border-bottom: 10px solid $text-color;
   &:nth-child(3n) {
@@ -29,7 +29,7 @@ body {
   border-bottom: 0;
   }
   &:hover {
-    background-color: gold;
+    background-color: #FE019A;
     cursor: pointer;
   }
   display: flex;
@@ -37,13 +37,45 @@ body {
   align-items: center;
 }
 
+.box {
+  font-family: Road;
+  font-size: 50px
+}
+
+h1{
+font-family: 'Rowdies', cursive;
+font-size: 40px;
+}
+
+#message{
+  font-size: 40px
+  font-family: 'Rowdies', cursive;
+}
+
+body{
+  background-image: url(https://images.squarespace-cdn.com/content/v1/5e3c600a64a00b1d67b8f8bb/1581806510596-LAKTK4IKA2PSNX1053FZ/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/0020_greenscreen_retrowave_neon_grids.jpg);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
 // I may not need this code below
 // I spreated this from the other .box I could not get to work other wise.
 // .box::before {
 //   content: '◯';
 //   font-size: 100px;
 // }
+button {
+  margin: 5px;
+  width: 170px;
+  background-color: #FE019A
+}
 
+input[type=text], input[type=password], input[type=email] {
+  width: 190px;
+  background-color: #9D00FF;
+}
 
 
 .win-message{
