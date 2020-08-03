@@ -21,6 +21,7 @@ Declaring a winner
 Having the cells set once they have been clicked
 changing between x and o.
 
+![Wire Fame1](https://user-images.githubusercontent.com/65584864/89171007-5ee0df80-d535-11ea-89a1-9ddb9de069c8.jpg)
 
 <h2>Languages used for this game:</h2>
 <ul>
