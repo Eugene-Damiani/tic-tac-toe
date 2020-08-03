@@ -22,17 +22,19 @@ Having the cells set once they have been clicked
 changing between x and o.
 
 <h2>Languages used for this game:</h2>
-JavaScript
-html
-CSS
-JQuery 
+<ul>
+  <li>JavaScript</li>
+<li>html</li>
+<li>CSS</li>
+  <li>JQuery</li>
+  </ul>
 
 
 <h2>Items to be added in later versions:</h2>
-
-Have 2-players play remotly 
-Player stats
-An A.I.
-Smoother UI desgin
-
+<ul>
+  <li>Have 2-players play remotly </li>
+  <li>Player stats</li>
+  <li>An A.I.</li>
+  <li>Smoother UI desgin</li>
+</ul>
 
