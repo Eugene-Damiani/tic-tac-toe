@@ -7,6 +7,7 @@ $('#sign-out').hide()
 $('#start-game').hide()
 $('#game-index').hide()
 $('#board').hide()
+$('#update-game').hide()
 
 const signUpSuccess = function () {
   $('#message').text('Looking Fresh! Login And \nYou Are Ready to Go!')
@@ -33,6 +34,7 @@ const signInSuccess = function (response) {
   $('#sign-in').hide()
   $('#h1').hide()
   $('#img').hide()
+  $('#update-game').show()
 }
 
 const signInFailure = function () {

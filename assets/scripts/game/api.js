@@ -198,9 +198,13 @@ const gameIndex = function () {
       Authorization: 'Bearer ' + store.user.token
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
     url: config.apiUrl + '/games/',
 =======
     url: config.apiUrl + '/games./',
+>>>>>>> html
+=======
+    url: config.apiUrl + '/games/',
 >>>>>>> html
     method: 'GET',
     data: {
@@ -239,6 +243,22 @@ const gameIndex = function () {
 // }
 =======
 
+<<<<<<< HEAD
+>>>>>>> html
+=======
+const updateGame = function (payload) {
+  return $.ajax({
+    headers: {
+      Authorization: 'Bearer ' + store.user.token
+    },
+    url: config.apiUrl + '/games/' + store.game._Id,
+    method: 'PATCH',
+    data: {
+      games: []
+    }
+  })
+}
+
 >>>>>>> html
 module.exports = {
   startGame,
@@ -251,5 +271,6 @@ module.exports = {
   lowLeft,
   lowMiddle,
   lowRight,
-  gameIndex
+  gameIndex,
+  updateGame
 }
