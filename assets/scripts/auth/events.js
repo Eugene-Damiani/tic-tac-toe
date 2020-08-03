@@ -42,19 +42,18 @@ const onSignOut = function (event) {
     .catch(ui.signOutFailure)
 }
 
-const onUpdateGame = function (event) {
-  event.preventDefault()
-  const form = event.target
-  const formData = getFormFields(form)
-
-  // api.updateGame(formData)
-  //   .then(ui.updateGameSuccess)
-  //   .catch(ui.updateGameFailure)
-}
+// I still need to work on this code
+// const onUpdateGame = function (event) {
+//   event.preventDefault()
+//   const form = event.target
+//   const formData = getFormFields(form)
+//   // api.updateGame(formData)
+//   //   .then(ui.updateGameSuccess)
+//   //   .catch(ui.updateGameFailure)
+// }
 module.exports = {
   onSignUp,
   onSignIn,
   onChangePassword,
-  onSignOut,
-  onUpdateGame
+  onSignOut
 }
