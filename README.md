@@ -1,9 +1,9 @@
-Tic-Tac-Toe
+<h1>Tic-Tac-Toe<h1>
 
+<h2>User Story:</h2>
+This is Tic Tac Toe game was created for those people who wanted to experence a tatse of the neon lights of the 80's and at the same time play a fun competive game. 
 
-USER Story:
-
-This game is for the user who is interested in getting their feet wet in the world of e-sports! Tic Tac Toe is a game of logic and strategy that provides endless hours of fun and excitement.  When players sign up for Tic-Tac-Toe they will be able to track the amount of games played and also includes the following:
+The user will be able to do the following actiopns: 
 
 When the player is Signed in they will be able to change password and sign out
 When playing game, the player will start as X and then rotate between X and O
@@ -12,28 +12,27 @@ When playing game, the player will be notified when win, loss or tie occurs
 Once a game is over, the player will not be able to add to that board
 Once a game is over, the player will be able to play again
 
-Planning:
+<h2>Planning:<h2>
 
-My major focus was reviewing past lessons on JavaScript and working out what will work and doing trail with the game logic of what was going to work and not work. Create a schedule and timeline of how long each phase of the project to take. 
+Creating a wireframe and looking at what problems needed to be sloved.
 
-Languages used for this game:
+Game Logic
+Declaring a winner
+Having the cells set once they have been clicked
+changing between x and o.
+
+<h2>Languages used for this game:<h2>
 JavaScript
 html
 CSS
-Bootstrap
+JQuery 
 
-Things to add:
-Functioning Restart Button
-Chnage password function to work
-Alert when game ends and who won
-forms must clear after success
-Give feedback to user on successful action
 
-Add-ons:
-Have the Sign-up botton become hidden on sign-in.
-Have the win/draw alert be on a sperate page that doesn't interput the first page.
+<h2>Items to be added in later versions:</h2>
+
 Have 2-players play remotly 
 Player stats
-An A.I. 
-Have the X's and O's show a shadow before object is placed. 
-Power-Ups
+An A.I.
+Smoother UI desgin
+
+
