@@ -1,7 +1,6 @@
 'use strict'
-
 const store = require ('../store')
-const config = require('../config')
+const config = require ('../config')
 
 // Starts new game
 
@@ -254,60 +253,3 @@ module.exports = {
   lowRight,
   gameIndex
 }
-
-// const config = require('../config')
-// const store = require('../store')
-// const events = require('./events')
-// const ui = require('./ui')
-//
-// const xSymbol = 'x'
-// const oSymbol = 'o'
-
-// const statusDiv = document.querySlector('.status');
-// const resetDiv = document.querySlector('.reset');
-// const cellDivs = document.querySlectorAll('.board')
-//
-// //game status Start and who's turn
-// let gameStart = true;
-// let xSymbol = true;
-//
-//
-// //check status
-//
-// const gameStatus = function (){
-//
-// }
-//
-// //event handler to reset game
-// const resetGame = function (event){
-//   console.log(event)
-// };
-//
-//
-// // To click on a cell and have players take turns.
-// const cellClick = function (event) {
-//   const classList = event.target.classList;
-//   const location = classList[1];
-//
-//   if(classList[2] === 'x' || classList[2] ==='o'){
-//     return;
-//   }
-//
-//   if (xSymbol) {
-//     classList.add('x')
-//     xSymbol = !xSymbol
-// } else {
-//     classList.add('o')
-//     xSymbol = !xSymbol
-//   }
-// }
-//
-// // event listeners
-// resetBoard.addEventListener('click, resetGame');
-//
-// for (const cell of cell ){
-//   cell.addEventListener('click', cellClick)
-// }
-//
-//
-// //How to stop a cell from being used twice

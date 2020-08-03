@@ -44,6 +44,7 @@ const signOut = function () {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 // const updateGame = function () {
 //   return $.ajax({
@@ -66,10 +67,11 @@ const signOut = function () {
 // }
 
 >>>>>>> html
+=======
+>>>>>>> html
 module.exports = {
   signUp,
   signOut,
   signIn,
-  changePassword,
-  updateGame
+  changePassword
 }

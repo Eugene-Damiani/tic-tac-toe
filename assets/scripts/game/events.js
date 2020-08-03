@@ -99,6 +99,7 @@ const onGameIndex = function (event) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
   api.updateGame(formData)
@@ -106,6 +107,8 @@ const onGameIndex = function (event) {
     .catch(ui.updateGameFailure)
 }
 
+>>>>>>> html
+=======
 >>>>>>> html
 module.exports = {
   onStartGame,
@@ -119,9 +122,13 @@ module.exports = {
   onLm,
   onLr,
 <<<<<<< HEAD
+<<<<<<< HEAD
   onGameIndex
 =======
   onGameIndex,
   onUpdateGame
+>>>>>>> html
+=======
+  onGameIndex
 >>>>>>> html
 }

@@ -49,23 +49,16 @@ font-size: 40px;
 
 #message{
   font-size: 40px
-  font-family: 'Rowdies', cursive;
 }
 
 body{
-  background-image: url(https://images.squarespace-cdn.com/content/v1/5e3c600a64a00b1d67b8f8bb/1581806510596-LAKTK4IKA2PSNX1053FZ/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/0020_greenscreen_retrowave_neon_grids.jpg);
-
+background-image: url(https://images.squarespace-cdn.com/content/v1/5e3c600a64a00b1d67b8f8bb/1581806510596-LAKTK4IKA2PSNX1053FZ/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/0020_greenscreen_retrowave_neon_grids.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
 }
-// I may not need this code below
-// I spreated this from the other .box I could not get to work other wise.
-// .box::before {
-//   content: '◯';
-//   font-size: 100px;
-// }
+
 button {
   margin: 5px;
   width: 170px;
@@ -75,17 +68,4 @@ button {
 input[type=text], input[type=password], input[type=email] {
   width: 190px;
   background-color: #9D00FF;
-}
-
-
-.win-message{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(255,255,255,.9);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

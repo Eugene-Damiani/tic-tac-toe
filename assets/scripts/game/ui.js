@@ -540,7 +540,7 @@ const gameIndexSuccess = function (response) {
   $('#message').text(response.games.length + ' Games Played!')
 }
 
-const gameIndexFailure = function(response) {
+const gameIndexFailure = function (response) {
   $('#message').text('No Sweat Play A Game')
 }
 
@@ -565,10 +565,16 @@ module.exports = {
   lowMiddleFailure,
   lowRightSuccess,
 <<<<<<< HEAD
+<<<<<<< HEAD
   lowRightFailure,
   gameIndexSuccess,
   gameIndexFailure
 =======
   lowRightFailure
+>>>>>>> html
+=======
+  lowRightFailure,
+  gameIndexSuccess,
+  gameIndexFailure
 >>>>>>> html
 }

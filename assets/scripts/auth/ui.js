@@ -14,7 +14,7 @@ const signUpSuccess = function () {
   $('#sign-up').hide()
 }
 
-const signUpFailure = function() {
+const signUpFailure = function () {
   $('#message').text('Missing Infomation Try Again')
   $('form').trigger('reset')
 }
@@ -83,10 +83,14 @@ module.exports = {
   signOutFailure,
   changePasswordSuccess,
 <<<<<<< HEAD
+<<<<<<< HEAD
   changePasswordFailure
 =======
   changePasswordFailure,
   updateGameSuccess,
   updateGameFailure
+>>>>>>> html
+=======
+  changePasswordFailure
 >>>>>>> html
 }
