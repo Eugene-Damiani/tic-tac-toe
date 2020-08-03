@@ -2,38 +2,25 @@
 
 const store = require ('../store')
 const config = require('../config')
-const ui = require('./ui')
 
 // Starts new game
 
 const startGame = function () {
   return $.ajax({
     headers: {
-      Authorization: 'Bearer ' + store.user.token,
+      Authorization: 'Bearer ' + store.user.token
     },
     url: config.apiUrl + '/games',
     method: 'POST'
   })
 }
 
-store.player = 'O'
-const valueTurn = function () {
-  if (store.player === 'O') {
-    store.player = 'X'
-    return store.player
-  } else {
-    store.player = 'O'
-    return store.player
-  }
-}
-
 //  The following block of code records each move for each game ID
-const topLeft = function() {
+const topLeft = function () {
   return $.ajax({
-    url: config.apiUrl + '/games' + store.game_id,
+    url: config.apiUrl + '/games/' + store.game._id,
     method: 'PATCH',
     headers: {
-      id: store.game._id,
       Authorization: 'Bearer ' + store.user.token
     },
     data: {
@@ -48,12 +35,11 @@ const topLeft = function() {
   })
 }
 
-const topMiddle = function() {
+const topMiddle = function () {
   return $.ajax({
-    url: config.apiUrl + '/games' + store.game_id,
+    url: config.apiUrl + '/games/' + store.game._id,
     method: 'PATCH',
     headers: {
-      id: store.game._id,
       Authorization: 'Bearer ' + store.user.token
     },
     data: {
@@ -68,9 +54,9 @@ const topMiddle = function() {
   })
 }
 
-const topRight = function() {
+const topRight = function () {
   return $.ajax({
-    url: config.apiUrl + '/games' + store.game_id,
+    url: config.apiUrl + '/games/' + store.game._id,
     method: 'PATCH',
     headers: {
       id: store.game._id,
@@ -88,9 +74,9 @@ const topRight = function() {
   })
 }
 
-const middleLeft= function() {
+const middleLeft = function () {
   return $.ajax({
-    url: config.apiUrl + '/games' + store.game_id,
+    url: config.apiUrl + '/games/' + store.game._id,
     method: 'PATCH',
     headers: {
       id: store.game._id,
@@ -107,9 +93,9 @@ const middleLeft= function() {
     }
   })
 }
-const middleMiddle= function() {
+const middleMiddle = function () {
   return $.ajax({
-    url: config.apiUrl + '/games' + store.game_id,
+    url: config.apiUrl + '/games/' + store.game._id,
     method: 'PATCH',
     headers: {
       id: store.game._id,
@@ -129,7 +115,7 @@ const middleMiddle= function() {
 
 const middleRight= function() {
   return $.ajax({
-    url: config.apiUrl + '/games' + store.game_id,
+    url: config.apiUrl + '/games/' + store.game._id,
     method: 'PATCH',
     headers: {
       id: store.game._id,
@@ -149,7 +135,7 @@ const middleRight= function() {
 
 const lowLeft= function() {
   return $.ajax({
-    url: config.apiUrl + '/games' + store.game_id,
+    url: config.apiUrl + '/games/' + store.game._id,
     method: 'PATCH',
     headers: {
       id: store.game._id,
@@ -169,7 +155,7 @@ const lowLeft= function() {
 
 const lowMiddle= function() {
   return $.ajax({
-    url: config.apiUrl + '/games' + store.game_id,
+    url: config.apiUrl + '/games/' + store.game._id,
     method: 'PATCH',
     headers: {
       id: store.game._id,
@@ -187,9 +173,9 @@ const lowMiddle= function() {
   })
 }
 
-const lowRight = function() {
+const lowRight = function () {
   return $.ajax({
-    url: config.apiUrl + '/games' + store.game_id,
+    url: config.apiUrl + '/games/' + store.game._id,
     method: 'PATCH',
     headers: {
       id: store.game._id,
@@ -207,46 +193,48 @@ const lowRight = function() {
   })
 }
 
-const totalGames= function () {
-  return $.ajax({
-    url: config.apiUrl + '/games',
-    method: 'GET',
-    headers: {
-      Authorization: 'Bearer ' + store.user.token
-    }
-  })
-}
 const gameIndex = function () {
   return $.ajax({
-    url: config.apiUrl + ' /games',
-    method: "GET",
-    headers:{
-      Authorization: 'Bearer ' + store.user.token
-    }
-  })
-}
-const updateGame = function () {
-  return $.ajax({
-    url: config.apiUrl + '/games' + store.game_id,
-    method: 'PATCH',
     headers: {
-      id: store.game._id,
       Authorization: 'Bearer ' + store.user.token
     },
+    url: config.apiUrl + '/games/',
+    method: 'GET',
     data: {
-      game: {
-        cell: {
-          index: $('#low-right').attr('data-cell'),
-          value: store.player
-        },
-        over: false
-      }
+      games: []
     }
   })
 }
+// const gameIndex = function () {
+//   return $.ajax({
+//     url: config.apiUrl + ' /games/',
+//     method: 'GET',
+//     headers: {
+//       Authorization: 'Bearer ' + store.user.token
+//     }
+//   })
+// }
+// const updateGame = function () {
+//   return $.ajax({
+//     url: config.apiUrl + '/games/' + store.game._id,
+//     method: 'PATCH',
+//     headers: {
+//       id: store.game._id,
+//       Authorization: 'Bearer ' + store.user.token
+//     },
+//     data: {
+//       game: {
+//         cell: {
+//           index: $('#low-right').attr('data-cell'),
+//           value: store.player
+//         },
+//         over: false
+//       }
+//     }
+//   })
+// }
 module.exports = {
   startGame,
-  valueTurn,
   topLeft,
   topMiddle,
   topRight,
@@ -256,7 +244,6 @@ module.exports = {
   lowLeft,
   lowMiddle,
   lowRight,
-  totalGames,
   gameIndex
 }
 
@@ -267,7 +254,6 @@ module.exports = {
 //
 // const xSymbol = 'x'
 // const oSymbol = 'o'
-
 
 // const statusDiv = document.querySlector('.status');
 // const resetDiv = document.querySlector('.reset');

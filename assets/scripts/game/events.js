@@ -1,7 +1,6 @@
 'use strict'
 const api = require('./api')
 const ui = require('./ui')
-// const store = require('../store')
 
 // Start the new game
 const onStartGame = function (event) {
@@ -15,7 +14,6 @@ const onTl = function () {
   event.preventDefault()
   if ($('#top-left').text() === '') {
     api.topLeft()
-    api.valueTurn()
       .then(ui.topLeftSuccess)
       .catch(ui.topLeftFailure)
   }
@@ -24,12 +22,9 @@ const onTl = function () {
 const onTm = function () {
   event.preventDefault()
   if ($('#top-middle').text() === '') {
-    api.topMiddle ()
-    api.valueTurn()
-      .then(ui.todleSuccess)
+    api.topMiddle()
+      .then(ui.topMiddleSuccess)
       .catch(ui.topMiddleFailure)
-  } else {
-    $('#message').text('NOT!!!')
   }
 }
 
@@ -37,7 +32,6 @@ const onTr = function () {
   event.preventDefault()
   if ($('#top-right').text() === '') {
     api.topRight()
-    api.valueTurn()
       .then(ui.topRightSuccess)
       .catch(ui.topRightFailure)
   }
@@ -45,11 +39,10 @@ const onTr = function () {
 
 const onMl = function () {
   event.preventDefault()
-  if ($('#middle-middle').text() === '') {
-    api.middleMiddle()
-    api.valueTurn()
-      .then(ui.middleMiddleSuccess)
-      .catch(ui.middleMiddleFailure)
+  if ($('#middle-left').text() === '') {
+    api.middleLeft()
+      .then(ui.middleLeftSuccess)
+      .catch(ui.middleLeftFailure)
   }
 }
 
@@ -57,7 +50,6 @@ const onMm = function () {
   event.preventDefault()
   if ($('#middle-middle').text() === '') {
     api.middleMiddle()
-    api.valueTurn()
       .then(ui.middleMiddleSuccess)
       .catch(ui.middleMiddleFailure)
   }
@@ -67,7 +59,6 @@ const onMr = function () {
   event.preventDefault()
   if ($('#middle-right').text() === '') {
     api.middleRight()
-    api.valueTurn()
       .then(ui.middleRightSuccess)
       .catch(ui.middleRightFailure)
   }
@@ -77,7 +68,6 @@ const onLl = function () {
   event.preventDefault()
   if ($('#low-left').text() === '') {
     api.lowLeft()
-    api.valueTurn()
       .then(ui.lowLeftSuccess)
       .catch(ui.lowLeftFailure)
   }
@@ -87,7 +77,6 @@ const onLm = function () {
   event.preventDefault()
   if ($('#low-middle').text() === '') {
     api.lowMiddle()
-    api.valueTurn()
       .then(ui.lowMiddleSuccess)
       .catch(ui.lowMiddleFailure)
   }
@@ -97,7 +86,6 @@ const onLr = function () {
   event.preventDefault()
   if ($('#low-right').text() === '') {
     api.lowRight()
-    api.valueTurn()
       .then(ui.lowRightSuccess)
       .catch(ui.lowRightFailure)
   }
@@ -105,7 +93,7 @@ const onLr = function () {
 
 const onGameIndex = function (event) {
   event.preventDefault()
-  api.gamesPlayed()
+  api.gameIndex()
     .then(ui.gameIndexSuccess)
     .catch(ui.gameIndexFailure)
 }
