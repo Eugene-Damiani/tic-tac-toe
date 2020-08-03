@@ -12,7 +12,7 @@ When playing game, the player will be notified when win, loss or tie occurs
 Once a game is over, the player will not be able to add to that board
 Once a game is over, the player will be able to play again
 
-<h2>Planning:<h2>
+<h2>Planning:</h2>
 
 Creating a wireframe and looking at what problems needed to be sloved.
 
@@ -21,7 +21,7 @@ Declaring a winner
 Having the cells set once they have been clicked
 changing between x and o.
 
-<h2>Languages used for this game:<h2>
+<h2>Languages used for this game:</h2>
 JavaScript
 html
 CSS
