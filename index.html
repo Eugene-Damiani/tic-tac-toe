@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap"
+      rel="stylesheet">
       <title>X's & O's</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,8 +14,16 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Tic-Tac-Toe X's & O's</h1>
-      <p id="message"></p>
+  <button type = 'submit' id = "start-game">Start Game</button>
+<button type ='submit' id= "game-index">Games Played</button>
+<form id ="change-password">
+  <input type= 'password' name='passwords[old]' placeholder ='Old Password'>
+  <input type= 'password' name='passwords[new]' placeholder = 'New Password'>
+    <button type = 'submit'> Change Password</button>
+</form>
+<form id='sign-out'>
+  <button type = 'submit'>Sign Out</button>
+</form>
       <form id="sign-up">
         <input type = 'text' name='credentials[email]' placeholder = 'E-mail'>
         <input type = 'password' name='credentials[password]' placeholder = 'Password'>
@@ -25,17 +35,12 @@
         <input type = 'password' name = 'credentials[password]' placeholder = 'Password'>
         <button type = 'submit'>Login</button>
       </form>
-      <form id ="change-password">
-        <input type= 'password' name='passwords[old]' placeholder ='Old Password'>
-        <input type= 'password' name='passwords[new]' placeholder = 'New Password'>
-          <button type = 'submit'> Change Password</button>
-      </form>
-<form id='sign-out'>
-        <button type = 'submit'>Sign Out</button>
-</form>
+        <h1 id='h1'>Flashback of the 80's Tic-Tac-Toe</h1>
+        <p id="message"></p>
 <!-- I needed to make each box have it's own ID inorder record the click function in each game.-->
           <section class ='container'>
-            <div class = 'row h-100 board' id = board>
+            <img src ="public/Lazer1.png" id= 'img' ></img>
+            <div class = 'row h-100 board' id = 'board'>
               <div class='col-4 box'id = 'top-left' data-cell= '0' ></div>
               <div class='col-4 box'id = 'top-middle' data-cell='1'></div>
               <div class='col-4 box'id = 'top-right' data-cell='2'></div>
@@ -49,7 +54,5 @@
               <div class='col-4 box' id = 'low-right' data-cell='8'></div>
             </div>
          </section>
-         <button type ='submit' id="restart">Retry</button>
-         <button type = 'submit' id = "start-game">Start Game</button>
   </body>
 </html>
