@@ -35,6 +35,6 @@ changing between x and o.
   <li>Have 2-players play remotly </li>
   <li>Player stats</li>
   <li>An A.I.</li>
-  <li>Smoother UI desgin</li>
+  <li>Smooth UI desgin</li>
 </ul>
 
