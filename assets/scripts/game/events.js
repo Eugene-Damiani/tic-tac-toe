@@ -98,27 +98,13 @@ const onGameIndex = function (event) {
     .catch(ui.gameIndexFailure)
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-  api.updateGame(formData)
-=======
-const onUpdateGame = function (event) {
-  event.preventDefault()
-  api.updateGame()
->>>>>>> html
-    .then(ui.updateGameSuccess)
-    .catch(ui.updateGameFailure)
-}
-
-<<<<<<< HEAD
->>>>>>> html
-=======
->>>>>>> html
-=======
->>>>>>> html
+//  api.updateGame(formData)
+// const onUpdateGame = function (event) {
+//   event.preventDefault()
+//   api.updateGame()
+//     .then(ui.updateGameSuccess)
+//     .catch(ui.updateGameFailure)
+// }
 module.exports = {
   onStartGame,
   onTl,
@@ -130,19 +116,5 @@ module.exports = {
   onLl,
   onLm,
   onLr,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   onGameIndex
-=======
-  onGameIndex,
-  onUpdateGame
->>>>>>> html
-=======
-  onGameIndex
->>>>>>> html
-=======
-  onGameIndex,
-  onUpdateGame
->>>>>>> html
 }

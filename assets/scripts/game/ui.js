@@ -572,23 +572,9 @@ module.exports = {
   lowMiddleSuccess,
   lowMiddleFailure,
   lowRightSuccess,
-<<<<<<< HEAD
-<<<<<<< HEAD
   lowRightFailure,
   gameIndexSuccess,
-<<<<<<< HEAD
-  gameIndexFailure
-=======
-  lowRightFailure
->>>>>>> html
-=======
-  lowRightFailure,
-  gameIndexSuccess,
-  gameIndexFailure
->>>>>>> html
-=======
   gameIndexFailure,
   updateGamesPlayedSuccess,
   updateGamesPlayedFailed
->>>>>>> html
 }

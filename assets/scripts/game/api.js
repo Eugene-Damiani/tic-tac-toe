@@ -112,7 +112,7 @@ const middleMiddle = function () {
   })
 }
 
-const middleRight= function() {
+const middleRight = function() {
   return $.ajax({
     url: config.apiUrl + '/games/' + store.game._id,
     method: 'PATCH',
@@ -132,7 +132,7 @@ const middleRight= function() {
   })
 }
 
-const lowLeft= function() {
+const lowLeft = function () {
   return $.ajax({
     url: config.apiUrl + '/games/' + store.game._id,
     method: 'PATCH',
@@ -152,7 +152,7 @@ const lowLeft= function() {
   })
 }
 
-const lowMiddle= function() {
+const lowMiddle = function () {
   return $.ajax({
     url: config.apiUrl + '/games/' + store.game._id,
     method: 'PATCH',
@@ -191,61 +191,18 @@ const lowRight = function () {
     }
   })
 }
-
 const gameIndex = function () {
   return $.ajax({
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
-<<<<<<< HEAD
-<<<<<<< HEAD
     url: config.apiUrl + '/games/',
-=======
-    url: config.apiUrl + '/games./',
->>>>>>> html
-=======
-    url: config.apiUrl + '/games/',
->>>>>>> html
     method: 'GET',
     data: {
       games: []
     }
   })
 }
-<<<<<<< HEAD
-// const gameIndex = function () {
-//   return $.ajax({
-//     url: config.apiUrl + ' /games/',
-//     method: 'GET',
-//     headers: {
-//       Authorization: 'Bearer ' + store.user.token
-//     }
-//   })
-// }
-// const updateGame = function () {
-//   return $.ajax({
-//     url: config.apiUrl + '/games/' + store.game._id,
-//     method: 'PATCH',
-//     headers: {
-//       id: store.game._id,
-//       Authorization: 'Bearer ' + store.user.token
-//     },
-//     data: {
-//       game: {
-//         cell: {
-//           index: $('#low-right').attr('data-cell'),
-//           value: store.player
-//         },
-//         over: false
-//       }
-//     }
-//   })
-// }
-=======
-
-<<<<<<< HEAD
->>>>>>> html
-=======
 const updateGame = function (payload) {
   return $.ajax({
     headers: {
@@ -259,7 +216,6 @@ const updateGame = function (payload) {
   })
 }
 
->>>>>>> html
 module.exports = {
   startGame,
   topLeft,

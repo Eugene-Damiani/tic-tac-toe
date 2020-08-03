@@ -55,14 +55,5 @@ module.exports = {
   onSignUp,
   onSignIn,
   onChangePassword,
-<<<<<<< HEAD
-<<<<<<< HEAD
   onSignOut
-=======
-  onSignOut,
-  onUpdateGame
->>>>>>> html
-=======
-  onSignOut
->>>>>>> html
 }

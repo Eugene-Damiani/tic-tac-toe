@@ -42,10 +42,6 @@ const signOut = function () {
     method: 'DELETE'
   })
 }
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 // const updateGame = function () {
 //   return $.ajax({
 //     url: config.apiUrl + '/games/' + store.game._id,
@@ -65,10 +61,6 @@ const signOut = function () {
 //     }
 //   })
 // }
-
->>>>>>> html
-=======
->>>>>>> html
 module.exports = {
   signUp,
   signOut,
