@@ -544,6 +544,14 @@ const gameIndexFailure = function (response) {
   $('#message').text('No Sweat Play A Game')
 }
 
+const updateGamesPlayedSuccess = function (response) {
+  const gamesPlayed = response.games.length
+  $('#update-game').text(gamesPlayed + ' Games Played!')
+}
+const updateGamesPlayedFailed = function(error) {
+  $('#update-game').text('Get Playing Already!')
+}
+
 module.exports = {
   startGameSuccess,
   startGameFailure,
@@ -566,5 +574,7 @@ module.exports = {
   lowRightSuccess,
   lowRightFailure,
   gameIndexSuccess,
-  gameIndexFailure
+  gameIndexFailure,
+  updateGamesPlayedSuccess,
+  updateGamesPlayedFailed
 }
